@@ -1,0 +1,6 @@
+First Prize,1,5
+Second Prize,2,7
+Third Prize,3,8
+Consolation Prize A,4,6
+Consolation Prize B,5,10
+Consolation Prize C,6,15
