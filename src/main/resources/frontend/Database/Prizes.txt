@@ -1,6 +1,6 @@
-First Prize,1,5
-Second Prize,2,7
-Third Prize,3,8
-Consolation Prize A,4,6
-Consolation Prize B,5,10
-Consolation Prize C,6,15
+First Prize,1,5,/frontend/Style/cat.jpg,Pretty Cat
+Second Prize,2,7,/frontend/Style/laptop.jpg,Laptop Lenovo Second Ver
+Third Prize,3,8,/frontend/Style/mayxay.jpg,Máy xay Lenovo
+Consolation Prize A,4,6,/frontend/Style/motorbike.png,Xe máy Honda
+Consolation Prize B,5,10,/frontend/Style/RiceCooker.jpg,Nồi cơm Lock&Lock
+Consolation Prize C,6,50,/frontend/Style/robothutbui.png,Robot hút bụi

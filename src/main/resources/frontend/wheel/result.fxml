@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" styleClass="body" stylesheets="@../Style/Styling.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.wheel.ResultPageController">
+   <children>
+      <BorderPane layoutX="44.0" layoutY="40.0" prefHeight="457.0" prefWidth="883.0" styleClass="ResultPane" stylesheets="@../Style/Styling.css" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0">
+         <top>
+            <VBox prefHeight="85.0" prefWidth="880.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="92.0" prefWidth="880.0" style="-fx-background-color: #a82118;" styleClass="ResultPane" stylesheets="@../Style/Styling.css">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <HBox prefHeight="50.0" prefWidth="483.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="71.0" prefWidth="817.0" text="KẾT QUẢ QUAY SỐ MAY MẮN" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Arial Bold" size="30.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Button fx:id="ExitButton" mnemonicParsing="false" onAction="#switchToWheelPage" prefHeight="25.0" prefWidth="29.0" text="X" wrapText="true">
+                                 <HBox.margin>
+                                    <Insets right="20.0" top="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Arial Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="880.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Label fx:id="PrizeNameLabel" alignment="CENTER" prefHeight="21.0" prefWidth="329.0" textFill="#db1616">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children></HBox>
+               </children>
+            </VBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="880.0" style="-fx-background-color: white;" stylesheets="@../Style/Styling.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="DeleteResultButton" mnemonicParsing="false" onAction="#deleteResult" style="-fx-background-color: transparent;" text="x Hủy kết quả" textFill="#eb1111">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <ScrollPane fx:id="scroll" fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../Style/Styling.css" HBox.hgrow="ALWAYS">
+                     <content>
+                        <StackPane fx:id="stack" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </content>
+                  </ScrollPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

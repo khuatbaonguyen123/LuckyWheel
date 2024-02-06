@@ -1,4 +1,4 @@
-package frontend.wheel;
+package frontend.backend;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -26,16 +26,18 @@ public abstract class Database {
     private static void loadPrizes(String filePath) {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            String[] data = new String[3]; // Reuse the same array
+            String[] data = new String[5]; // Reuse the same array
 
             while ((line = reader.readLine()) != null) {
                 data = line.split(",");
                 String name = data[0].trim();
                 int index = Integer.parseInt(data[1].trim());
                 int amount = Integer.parseInt(data[2].trim());
+                String imagePath = data[3].trim();
+                String item = data[4].trim();
 
                 // Process the prize data immediately (e.g., create a Prize object)
-                prizes.add(new Prize(name, index, amount));
+                prizes.add(new Prize(name, index, amount, imagePath, item));
             }
         } catch (IOException e) {
             e.printStackTrace();
